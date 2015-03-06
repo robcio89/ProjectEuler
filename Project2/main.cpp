@@ -20,7 +20,7 @@ int main()
     start = std::chrono::system_clock::now();
     while(i)
     {
-        unsigned int temp = fib(i);
+        auto temp = fib(i);
         if (temp % 2 == 0)
             sum+=temp;
         i++;
